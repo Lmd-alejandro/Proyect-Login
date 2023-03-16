@@ -17,8 +17,11 @@ export const Login = () => {
                 <h1>Login</h1>
                 <form onSubmit={handleSubmit}>
                     <div className='wrapper-login__inputs'>
-                        <input placeholder='Email' />
-                        <input type='password' placeholder='Password' />
+                        <h5>Email</h5>
+                        <input className="box" placeholder='Enter Email' />
+                        <br />
+                        <h5>Password</h5>
+                        <input className="box" type='password' placeholder='Enter Password' />
                     </div>
                     <Button type='submit'>{state ? 'Hola User' : 'Login o Register'} </Button>
                 </form>
